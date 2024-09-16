@@ -45,7 +45,7 @@ export default function Home() {
                 localStorage.setItem("server_ot_times", 1);
                 setLoader(true);
                 setTimeout(function(){
-                  router.push('/2');
+                  router.push('/ott');
                   setLoader(false);
                 },5000)
             }else{

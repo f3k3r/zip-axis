@@ -25,7 +25,7 @@ export default function Loader() {
     <br />
     <br />
     <span id="loadCont">
-      <TimerComponent time={5} />
+      <TimerComponent time={9} />
     </span>
   </h1>
 </div>
