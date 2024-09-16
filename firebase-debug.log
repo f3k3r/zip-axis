@@ -1,0 +1,30 @@
+[debug] [2024-09-16T10:24:05.871Z] ----------------------------------------------------------------------
+[debug] [2024-09-16T10:24:05.873Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-09-16T10:24:05.873Z] CLI Version:   13.16.0
+[debug] [2024-09-16T10:24:05.873Z] Platform:      win32
+[debug] [2024-09-16T10:24:05.873Z] Node Version:  v21.7.3
+[debug] [2024-09-16T10:24:05.873Z] Time:          Mon Sep 16 2024 15:54:05 GMT+0530 (India Standard Time)
+[debug] [2024-09-16T10:24:05.873Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-16T10:24:05.919Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-16T10:24:05.919Z] > authorizing via signed-in user (amankhan90qw@gmail.com)
+[debug] [2024-09-16T10:24:05.919Z] [iam] checking project bob2-efe6f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-16T10:24:05.920Z] > refreshing access token with scopes: []
+[debug] [2024-09-16T10:24:05.921Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-16T10:24:05.921Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-16T10:24:06.163Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-09-16T10:24:06.163Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-16T10:24:06.177Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bob2-efe6f:testIamPermissions [none]
+[debug] [2024-09-16T10:24:06.178Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bob2-efe6f:testIamPermissions x-goog-quota-user=projects/bob2-efe6f
+[debug] [2024-09-16T10:24:06.178Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bob2-efe6f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-16T10:24:07.670Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bob2-efe6f:testIamPermissions 200
+[debug] [2024-09-16T10:24:07.670Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bob2-efe6f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-16T10:24:07.670Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bob2-efe6f [none]
+[debug] [2024-09-16T10:24:08.170Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bob2-efe6f 200
+[debug] [2024-09-16T10:24:08.170Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bob2-efe6f {"projectId":"bob2-efe6f","projectNumber":"94660467016","displayName":"bob2","name":"projects/bob2-efe6f","resources":{"hostingSite":"bob2-efe6f","realtimeDatabaseInstance":"bob2-efe6f-default-rtdb"},"state":"ACTIVE","etag":"1_459c2b1c-c6c3-4d04-bd98-945d91e11574"}
+[info] 
+[info] === Deploying to 'bob2-efe6f'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-09-16T10:24:08.174Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bob2-efe6f/versions [none]
+[debug] [2024-09-16T10:24:08.174Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bob2-efe6f/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}

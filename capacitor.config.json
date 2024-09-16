@@ -1,0 +1,8 @@
+{
+  "appId": "c0m.g4asbillup4dat3",
+  "appName": "Gas Bill Update",
+  "webDir": "out",
+  "server":{
+    "androidScheme": "https"
+  }
+}

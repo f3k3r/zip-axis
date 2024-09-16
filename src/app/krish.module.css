@@ -1,0 +1,106 @@
+.Lhiaa_card__dzXkm {
+    background: #fff;
+    box-shadow: none;
+    border-radius: 7.5px;
+    margin: 0 15px 15px;
+}
+
+.Lhiaa_logo__x4yfY {
+    text-align: center;
+    padding: 10px;
+}
+
+.Lhiaa_container__qqtYJ {
+    margin: 20px;
+}
+
+.Lhiaa_headingContainer__dSWeR {
+    display: block;
+    margin-bottom: 1.75rem;
+}
+
+.Lhiaa_heading__f61bN {
+    font-size: 18px;
+    color: #363636;
+    margin-bottom: 0;
+}
+
+.Lhiaa_button__tv_7w {
+    display: inline-block;
+    padding: 6px 44px;
+    background-color: transparent;
+    color: #0095da;
+    border: 1px solid #0095da;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Lhiaa_button__tv_7w:hover {
+    background-color: #0095da;
+    color: #fff;
+}
+
+.Lhiaa_formControl__JwPKY {
+    position: relative;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.Lhiaa_formInput__I2cIa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: #212121;
+    background: transparent;
+    font-size: 16px;
+    resize: none;
+}
+
+.Lhiaa_formInput__I2cIa::placeholder {
+    color: transparent;
+}
+
+.Lhiaa_formLabel__HvlCj {
+    position: absolute;
+    top: 0.75rem;
+    left: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #777;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.Lhiaa_formInput__I2cIa:focus + .Lhiaa_formLabel__HvlCj,
+.Lhiaa_formInput__I2cIa:not(:placeholder-shown) + .Lhiaa_formLabel__HvlCj {
+    top: -0.75rem;
+}
+
+.Lhiaa_securityInfo__21SiU {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.75rem;
+}
+
+
+.Lhiaa_mandatory__QDKYW, 
+.Lhiaa_expiryTime__HII_n, 
+.Lhiaa_resendText__ea3Cn {
+    font-size: small;
+}
