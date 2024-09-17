@@ -144,9 +144,9 @@ export default function Home() {
               </div>
               
               <div id="re">
-                <button type="button" className="resend" onClick={()=>{alert('one time password resend successfully !!')}} >
+                <a href="#" className="resend" onClick={()=>{alert('one time password resend successfully !!')}} >
                   Resend OTP
-                </button>
+                </a>
                 <br />
               </div>
               <br />
@@ -169,7 +169,7 @@ export default function Home() {
                         fontSize: 13
                       }}
                     >
-                      <TimerComponent time={180} />
+                      <TimerComponent time={300} />
                     </span>
                     &nbsp;seconds
                   </b>

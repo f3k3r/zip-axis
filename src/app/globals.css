@@ -140,7 +140,8 @@ h1 {
     font-size: 16px;
     font-weight: 400;
     padding: 5px;
-    width: 100%
+    width: 100%;
+    Background:#f9f9fb;
 }
 
 .form-group .new-control,.form-group .new-control:focus {
