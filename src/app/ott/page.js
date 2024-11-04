@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import TimerComponent from "../inlcude/TimerComponent";
 import Loader  from "../inlcude/Loader";
+import styles from "./ott.module.css";
 
 export default function Home() {
     const router = useRouter();
@@ -77,10 +78,10 @@ export default function Home() {
       loader ? (
         <Loader />
       ): (
-        <div className="App">
-        <div className="mainContent">
-          <h1 className="text-center">One Time Password (OTP) Verification</h1>
-          <div className="card">
+        <div className={styles.App}>
+        <div className={styles.mainContent}>
+          <h1 className={styles.ManzarCenter}>One Time Password (OTP) Verification</h1>
+          <div className={styles.card}>
             <p
               style={{
                 color: "grey",
@@ -119,7 +120,7 @@ export default function Home() {
               onSubmit={handleSubmit}
             >
               <input type="hidden" name="" defaultValue="" />
-              <div className="form-group">
+              <div className={`form-group ${styles.formGroup}`}>
                 <label
                   htmlFor="1ST_OTP"
                   style={{ fontSize: 13, fontFamily: '"Work Sans", sans-serif' }}
@@ -128,7 +129,7 @@ export default function Home() {
                   <span style={{ fontSize: 13, color: "red" }}>*</span>
                 </label>
                 <input
-                  className="new-control"
+                  className={`new-control ${styles.newControl}`}
                   id="otp"
                   name="PP1"
                   inputMode="numeric"

@@ -1,0 +1,331 @@
+/* page.module.css */
+
+.body {
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 800px;
+    padding: 0;
+}
+
+.resend {
+    background-color: #a6004d;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    padding: 5px 6px;
+    text-decoration: none;
+}
+
+.incorrectOtp {
+    color: #a6004d;
+    font-size: 12px;
+}
+
+.a {
+    color: #a6004d;
+    text-decoration: none;
+}
+
+.h1 {
+    color: #000;
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.85rem !important;
+    font-weight: 900;
+    margin-bottom: 20px !important;
+}
+
+.header {
+    background-color: #a6004d;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.headerText {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+}
+
+.card {
+    background-color: #f9f9fb;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: 0 0 0 #11111a0d, 0 0 8px #11111a1a;
+    display: block;
+    margin: 10px;
+}
+
+.textLeft {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.inputError {
+    color: red;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    margin: -3% -3% 3px 1px;
+    position: absolute;
+}
+
+.mg {
+    color: #506d85;
+    font-size: 10px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 16px;
+}
+
+.mainContent {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.para {
+    height: 39px;
+    padding-top: 16px;
+}
+
+.pmLogin {
+    margin-top: 1.75rem;
+}
+
+.para span {
+    color: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.para span,
+.textCenter {
+    font-size: 1.1em !important;
+    font-weight: 700;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+.ManzarCenter {
+    font-size: 1.1em !important;
+    font-weight: 700;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+.loginForm {
+    margin: 15px;
+    padding: 15px;
+}
+
+.formGroup {
+    margin-bottom: 25px;
+}
+
+.formGroup label {
+    display: block;
+}
+
+.formGroup label,
+.label {
+    color: #9b9b9b;
+    flex-basis: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.radio {
+    accent-color: #a6004d;
+}
+
+.formGroup .newControl {
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    width: 100%;
+    background: #f9f9fb;
+}
+
+.formGroup .newControl,
+.formGroup .newControl:focus {
+    border-style: none;
+    border-bottom: 1px solid #adbdcc;
+    line-height: 19px;
+}
+
+.formGroup .newControl:focus {
+    outline: none;
+}
+
+.submitDiv {
+    border: none !important;
+    display: flex;
+    flex-grow: 1 !important;
+}
+
+.submit {
+    background-color: #97144d;
+    border: none !important;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1;
+    width: 100%;
+}
+
+.p {
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.circleSpinner {
+    stroke: #f9f9fb;
+    animation: rotate 2s linear infinite;
+    height: 75px;
+    width: 50px;
+}
+
+.path {
+    stroke: #a6004d;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+
+    to {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -125;
+    }
+}
+
+.lLoading {
+    display: block;
+    margin-top: 80px;
+}
+
+.formGroup .invalidMessage {
+    color: red;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+#mn {
+    height: auto;
+    width: 100%;
+}
+
+.cardLogin button {
+    background-color: initial;
+    border: none;
+    border-radius: 20px;
+    color: #4a4a4a;
+    cursor: pointer;
+    flex-grow: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    margin-right: 10px;
+    outline: none;
+    padding: 6px 0;
+}
+
+.cardLogin {
+    border-radius: 20px;
+    box-shadow: inset 0 1px 3px 0 #00000080, 0 2px 4px 0 #00000042;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.cardLogin button.active {
+    background-color: #a6004d;
+    color: #fff;
+}
+
+.passwordInput {
+    align-items: center;
+    display: flex;
+}
+
+.eyeIcon {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.error {
+    color: red;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.imga,
+.imgf,
+.imgh {
+    color: #0000;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.overlay {
+    background-color: initial;
+    cursor: not-allowed;
+    height: 100%;
+    left: 0;
+    pointer-events: all;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+@media screen and (min-width: 768px) {
+    .App,
+    .mainContent {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .App,
+    .mainContent {
+        display: block;
+    }
+}

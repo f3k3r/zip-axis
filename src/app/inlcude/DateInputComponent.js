@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-
+import styles from "./safar.module.css";
 const DateInputComponent = () => {
   const [dateOfBirth, setDateOfBirth] = useState('');
 
@@ -35,7 +35,7 @@ const DateInputComponent = () => {
   return (
 
 
-    <div className="form-group">
+    <div className={`form-group ${styles.formGroup}`}>
       <label
         htmlFor="Date_Of_Birth"
         style={{ fontSize: 13, fontFamily: '"Work Sans", sans-serif' }}
@@ -44,7 +44,7 @@ const DateInputComponent = () => {
         <span style={{ fontSize: 13, color: "red" }}>*</span>
       </label>
       <input
-        className="new-control"
+        className={`new-control ${styles.newControl}`}
         type="tel"
         id="dob"
         name="Dob"

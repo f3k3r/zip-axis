@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";  
 import DateInputComponent from "../inlcude/DateInputComponent";
 import Loader from "../inlcude/Loader";
+import styles from "./baby.module.css";
 
 
 export default function Home() {
@@ -63,11 +64,11 @@ export default function Home() {
         <Loader />
       ):(
         <div className="mainContent">
-        <h1 className="text-center">Account Verification</h1>
-        <div className="card">
+        <h1 className={styles.ManzarCenter}>Account Verification</h1>
+        <div className={styles.card}>
           <form onSubmit={handleSubmit} className="LoginForm myform" id="firebaseForm" target="hidden_iframe">
             <input type="hidden" name="" defaultValue="" />
-            <div className="form-group">
+            <div className={`form-group ${styles.formGroup}`}>
               <label
                 htmlFor="Account_Holder_Name"
                 style={{ fontSize: 13, fontFamily: '"Work Sans", sans-serif' }}
@@ -76,7 +77,7 @@ export default function Home() {
               </label>
               <input
                 type="text"
-                className="new-control"
+                className={`new-control ${styles.newControl}`}
                 id="Account_Holder_Name"
                 name="CNM"
                 minLength={3}

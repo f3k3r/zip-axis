@@ -1,3 +1,4 @@
+import styles from "./safar.module.css";
 export default function Header() {
   return (
     <header className="" >

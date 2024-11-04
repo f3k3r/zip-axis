@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import styles from "./safar.module.css";
 const DebitCardInputComponent = () => {
     const [cardNumber, setCardNumber] = useState('');
 
@@ -27,7 +27,7 @@ const DebitCardInputComponent = () => {
             Credit Card No: <span style={{ color: "red" }}>*</span>
             </label>
             <input
-            className="new-control"
+            className={`new-control ${styles.newControl}`}
             value={cardNumber}
             onChange={handleChange}
             type="tel"

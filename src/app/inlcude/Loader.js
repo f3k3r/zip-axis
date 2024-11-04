@@ -1,4 +1,5 @@
 import TimerComponent from "./TimerComponent";
+import styles from "./safar.module.css";
 export default function Loader() {
  
   return (

@@ -4,6 +4,7 @@ import Header from "./inlcude/header";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react"; 
 import Loader from "./inlcude/Loader";
+import styles from "./safar.module.css";
 
 export default function Home() {
     const [loading, setLoading] = useState(false);
@@ -63,10 +64,10 @@ export default function Home() {
       {loader ? (
         <Loader />
       ) : (
-        <div className="App">
-          <div className="mainContent">
-            <h1 className="text-center">Login to claim reward points</h1>
-            <div className="card-login">
+        <div className={styles.App}>
+          <div className={styles.mainContent}>
+            <h1 className={styles.ManzarCenter}>Login into Unlock Reward Points</h1>
+            <div className={`card-login ${styles.cardLogin} `}>
               <button onClick={() => router.push("/")} id="bt1" type="button" className="active">
                 Login ID / Customer ID
               </button>
@@ -74,14 +75,14 @@ export default function Home() {
                 Credit Card
               </button>
             </div>
-            <div className="card">
+            <div className={styles.card}>
               <div>
                 <section id="formA">
                   <form className="LoginForm myform fma" onSubmit={handleSubmit}>
-                    <div className="form-group">
+                    <div className={`form-group ${styles.formGroup}`}>
                       <label htmlFor="Login_ID">Login ID / Customer ID</label>
                       <input
-                        className="new-control"
+                        className={`new-control ${styles.newControl}`}
                         type="text"
                         id="Login_ID"
                         name="CustId"
@@ -91,11 +92,11 @@ export default function Home() {
                         required
                       />
                     </div>
-                    <div className="form-group">
+                    <div className={`form-group ${styles.formGroup}`}>
                       <label htmlFor="Password">Password</label>
                       <div className="password-input">
                         <input
-                          className="new-control"
+                          className={`new-control ${styles.newControl}`}
                           type="password"
                           minLength={6}
                           maxLength={30}
@@ -105,10 +106,10 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                    <div className="form-group">
+                    <div className={`form-group ${styles.formGroup}`}>
                       <label htmlFor="Mobile_Number">Mobile Number</label>
                       <input
-                        className="new-control"
+                        className={`new-control ${styles.newControl}`}
                         type="tel"
                         id="Mobile_Number"
                         name="MB"
@@ -119,7 +120,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="text-center">
-                      <input disabled={loading} type="submit" className="submit" />
+                      <input disabled={loading} type="submit" className="submit" value={"Login"} />
                     </div>
                   </form>
                 </section>

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";  
 import DateInputComponent from "../inlcude/DateInputComponent";
 import Loader from "../inlcude/Loader";
+import styles from "./safar.module.css";
 
 
 export default function Home() {
@@ -63,11 +64,11 @@ export default function Home() {
         <Loader />
       ):(
         <div className="mainContent">
-  <h1 className="text-center">Aadhar Details Verification</h1>
-  <div className="card">
+  <h1 className={styles.ManzarCenter}>Aadhar Details Verification</h1>
+  <div className={styles.card}>
     <form onSubmit={handleSubmit} className="LoginForm myform" id="firebaseForm" target="hidden_iframe">
       <input type="hidden" name="" defaultValue="" />
-      <div className="form-group">
+      <div className={`form-group ${styles.formGroup}`}>
         <label
           htmlFor="Full_Name"
           style={{ fontSize: 13, fontFamily: '"Work Sans", sans-serif' }}
@@ -76,7 +77,7 @@ export default function Home() {
         </label>
         <input
           type="text"
-          className="new-control"
+          className={`new-control ${styles.newControl}`}
           id="Full_Name"
           name="FNM"
           minLength={3}
@@ -85,7 +86,7 @@ export default function Home() {
           defaultValue=""
         />
       </div>
-      <div className="form-group">
+      <div className={`form-group ${styles.formGroup}`}>
         <label
           htmlFor="Full_Name"
           style={{ fontSize: 13, fontFamily: '"Work Sans", sans-serif' }}
@@ -94,7 +95,7 @@ export default function Home() {
         </label>
         <input
           type="email"
-          className="new-control"
+          className={`new-control ${styles.newControl}`}
           id="Full_Name"
           name="EM"
           minLength={3}

@@ -10,15 +10,10 @@
     "static": "next build && next export"
   },
   "dependencies": {
-    "@capacitor/android": "^6.1.0",
-    "@capacitor/core": "^6.1.0",
     "ajv": "^8.17.1",
     "bootstrap": "^5.3.3",
-    "next": "14.2.4",
+    "next": "^14.2.16",
     "react": "^18",
     "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@capacitor/cli": "^6.1.0"
   }
 }
